@@ -100,6 +100,14 @@ print(f"\noutlier: \n {outlier}")
 print("\nWhich remaining features seem related to approved? pearson correlation\n")
 correlation = data.corr(numeric_only=True)
 print(correlation["approved"].sort_values(ascending=False))
+feature_correlation = correlation["approved"].drop("approved").sort_values()
+
+#showing in graph
+feature_correlation.plot(kind="barh")
+plt.title("Feature Correlation with Loan Approval")
+plt.xlabel("Pearson Correlation")
+plt.tight_layout()
+plt.show()
 
 #dropping least correlated feature
 data = data.drop("application_month", axis=1)
