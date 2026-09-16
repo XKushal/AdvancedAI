@@ -102,7 +102,7 @@ correlation = data.corr(numeric_only=True)
 print(correlation["approved"].sort_values(ascending=False))
 feature_correlation = correlation["approved"].drop("approved").sort_values()
 
-#showing in graph
+#graphical representation
 feature_correlation.plot(kind="barh")
 plt.title("Feature Correlation with Loan Approval")
 plt.xlabel("Pearson Correlation")
