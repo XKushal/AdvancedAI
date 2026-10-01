@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
 # 1. Load Dataset
 # -----------------------------------------
 
-input_file = "data/data_random_forests.txt"
+input_file = "../data/data_random_forests.txt"
 data = np.loadtxt(input_file, delimiter=",")
 
 # Features and target

@@ -11,7 +11,7 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 # 1. Load dataset
 # ------------------------------------------------
 
-input_file = "data/data_decision_trees.txt"
+input_file = "../data/data_decision_trees.txt"
 data = np.loadtxt(input_file, delimiter=",")
 
 # First two columns = features

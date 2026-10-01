@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report
 
 
 # 1. Load the dataset
-data = np.loadtxt("data/data_random_forests.txt", delimiter=",")
+data = np.loadtxt("../data/data_random_forests.txt", delimiter=",")
 
 X = data[:, :-1]
 y = data[:, -1].astype(int)
